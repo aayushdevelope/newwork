@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-shadow: border-box;
+    font-family: "Beau Rivage", cursive;
+   
+}
+ 
+body {
+    display: block;
+   justify-content: center;
+   align-items: center;
+   
+    width: 100%;
+    height: 100vh;
+    background: #000;
+    
+}
+.div h1 {
+    font-size: 60px;
+}
+
+body .div {
+    
+    margin: auto;
+    margin-top: 20px;
+    padding: 10px;
+    display: block;
+   height: 100%;
+   width: 75%;
+   text-align: center;
+   border: #fff solid 2px;
+   color: #fff;
+   background: #000;
+    
+}
+ body .div {
+   border: black solid 3px;
+   border-radius: 4px;
+   
+   box-shadow: 0 0 50PX 10PX rgba(237, 238, 239, 0.815);
+   -webkit-transition: all 0.2s ease-out;
+   -moz-transition: all 0.2s ease-out;
+   transition: all 0.2s ease-out;
+   cursor: pointer;
+
+ }
+ .div::before {
+    -webkit-animation: sh02 4s 0s linear ;
+    -moz-animation: sh02 4s 0s linear ;
+    animation: sh02 4s 0s linear ;
+}
+.div::before {
+    content: '';
+    display: block;
+    width: 0px;
+    height: 86%;
+    position: absolute;
+    top: 7%;
+    left: 0%;
+    opacity: 0;
+    background: #fff;
+    box-shadow: 0 0 50px 30px #fff;
+    -webkit-transform: skewX(-30deg);
+    -moz-transform: skewX(-30deg);
+    -ms-transform: skewX(-30deg);
+    -o-transform: skewX(-30deg);
+    transform: skewX(-30deg);
+}
+@keyframes sh02 {
+    from {
+        opacity: 0;
+        left: 0%;
+    }
+    50% {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+        left: 100%;
+    }
+}
+body .div p {
+    font-size: 30px;
+   
+
+}
+
+body .div .education {
+    float: left;
+    color: white;
+}
+body .div .seducation {
+    float: right;
+    color: white;
+}
+
+@media screen and (max-width:800px) {
+    body .div  {
+        height: 85rem;
+    }
+
+    
+}
