@@ -13,6 +13,14 @@
 </head>
 
 <body>
+     <div class="nav" id="navbar">
+        <button><a href="home" target="_blank">Home</a></button>&nbsp;
+        <button><a href="about.html" target="_blank"> About</a></button>&nbsp;
+        <button><a href="projects.html" target="_blank">Projects</a></button>&nbsp;
+        <button><a href="Contact" target="_blank">Contact</a></button>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars">Menu</i></a>
+    </div>
     <div class="div">
         <h1><u>About&nbsp;Me</u></h1>
 
@@ -38,6 +46,18 @@
             Achievements: Top 2nd scorer in science stream with 75%
         </p>
     </div>
+      <script>
+        function myFunction() {
+        var x = document.getElementById("navbar");
+        if (x.className === "nav") {
+            x.className += " responsive";
+        } else {
+            x.className = "nav";
+        }
+    }
+    
+    
+    </script>
 
 </body>
 
